@@ -4,7 +4,7 @@ var chapter1 = require('./build/Release/chapter1.node');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express',chapterone:chapter1 });
+  res.render('index', { title: 'Express'});
 });
 
 module.exports = router;

@@ -5,7 +5,7 @@
 
 $(function () {
 
-    console.log(chapterone);
+    
     // Floating-Fixed table of contents
     if ($('nav').length) {
         $('.toc-wrapper').pushpin({top: $('nav').height()});
