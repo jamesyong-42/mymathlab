@@ -1,11 +1,11 @@
 /**
  * Created by saki on 2016/11/16.
  */
-var chapter1 = require('./build/Release/chapter1.node');
+
 
 $(function () {
 
-    console.log(chapter1.hello());
+    console.log(chapterone);
     // Floating-Fixed table of contents
     if ($('nav').length) {
         $('.toc-wrapper').pushpin({top: $('nav').height()});
