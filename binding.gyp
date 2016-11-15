@@ -1,8 +1,8 @@
 {
   "targets": [
     {
-      "target_name": "addon",
-      "sources": [ "cpp/addon.cc" ]
+      "target_name": "chapter1",
+      "sources": [ "cpp/chapter1.cc" ]
     }
   ]
 }

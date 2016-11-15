@@ -1,28 +1,37 @@
-extends layout
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=100%, initial-scale=1')
+    title= title
+    link(rel='stylesheet', href='/stylesheets/materialize.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    script(src='/js/jquery.min.js')
+    script(src='/js/materialize.js')
+    script(src='/js/main.js')
+  body
+    aside.sidebar
+      section.logo
+        img(src="/img/logo.png",style="height: 128px;width: 128px")
 
-block content
-  aside.sidebar
-    section.logo
-      img(src="/img/logo.png",style="height: 128px;width: 128px")
-
-    ul.nav.clearfix
-      li: a(href="#") 误差序列
-      li.sidebar-collapsible
-        ul.collapsible.collapsible-accordion
-          li: a(class="collapsible-header  waves-effect waves-teal") 非线性方程
-            .collapsible-body
-              ul
-                li: a(href="http://www.materialscss.com/color") 不动点迭代
-                li: a(href="http://www.materialscss.com/grid") 牛顿-拉夫森法
-                li: a(href="http://www.materialscss.com/helpers") 割线法
-          li: a(class="collapsible-header waves-effect waves-teal") 线性方程
-            .collapsible-body
-              ul
-                li: a(href="http://www.materialscss.com/badges") 矩阵变换
-                li: a(href="http://www.materialscss.com/buttons") 高斯消元法
-                li: a(href="http://www.materialscss.com/cards") 雅可比迭代
-                li: a(href="http://www.materialscss.com/collections") 高斯-赛德尔迭代
-
-  main
-    div#index-banner.index-banner.section.no-pad-bot.primary-bg
-      div.container
+      ul.nav.clearfix
+        li: a(href="#") 误差序列
+        li.sidebar-collapsible
+          ul.collapsible.collapsible-accordion
+            li: a(class="collapsible-header  waves-effect waves-teal") 非线性方程
+              .collapsible-body
+                ul
+                  li: a(href="http://www.materialscss.com/color") 不动点迭代
+                  li: a(href="http://www.materialscss.com/grid") 牛顿-拉夫森法
+                  li: a(href="http://www.materialscss.com/helpers") 割线法
+            li: a(class="collapsible-header waves-effect waves-teal") 线性方程
+              .collapsible-body
+                ul
+                  li: a(href="http://www.materialscss.com/badges") 矩阵变换
+                  li: a(href="http://www.materialscss.com/buttons") 高斯消元法
+                  li: a(href="http://www.materialscss.com/cards") 雅可比迭代
+                  li: a(href="http://www.materialscss.com/collections") 高斯-赛德尔迭代
+    main
+      div#index-banner.index-banner.section.no-pad-bot.primary-bg
+        div.container
